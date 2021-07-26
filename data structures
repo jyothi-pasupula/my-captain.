@@ -1,0 +1,31 @@
+# my-captain.
+#include <stdio.h>
+ 
+/*structure declaration*/
+struct employee{
+    char    name[20];
+    int     age;
+    float   number;
+    float   salary;
+};
+ 
+int main()
+{
+    /*declare structure variable*/
+    struct employee emp;
+     
+    /*read employee details*/
+    printf("\nEnter details :\n");
+    printf("Name ?:");          gets(emp.name);
+    printf("age?:");        scanf("%d",&emp.age);
+    printf("number?:");      scanf("%f",&emp.number);
+    printf("Salary ?:");        scanf("%f",&emp.salary);
+     
+    /*print employee details*/
+    printf("\nEntered detail is:\n");
+    printf("Name: %s\n"   ,emp.name);
+    printf("age: %d\n"     ,emp.age);
+    printf("number: %f\n"     ,emp.number);
+    printf("Salary: %f\n",emp.salary);
+    return 0;
+}
